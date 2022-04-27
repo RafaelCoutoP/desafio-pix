@@ -32,6 +32,8 @@ dependencies {
     implementation("io.micronaut.sql:micronaut-jdbc-hikari")
     implementation("jakarta.annotation:jakarta.annotation-api")
     implementation("io.micronaut:micronaut-http-client")
+    implementation("io.micronaut.beanvalidation:micronaut-hibernate-validator")
+    implementation("org.hibernate:hibernate-validator:6.1.6.Final")
     implementation("org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}")
     implementation("io.micronaut:micronaut-validation")

@@ -4,6 +4,7 @@ import br.com.rafacdev.pix.ChavePix
 import br.com.rafacdev.pix.ContaAssociada
 import br.com.rafacdev.pix.TipoDeChave
 import br.com.rafacdev.pix.TipoDeConta
+import br.com.rafacdev.shared.validation.ValidUUID
 import io.micronaut.core.annotation.Introspected
 import java.util.*
 import javax.validation.constraints.NotBlank
@@ -11,7 +12,9 @@ import javax.validation.constraints.NotNull
 import javax.validation.constraints.Size
 
 @Introspected
+@ValidPixKey
 data class NovaChavePix(
+    @ValidUUID
     @field:NotBlank
     val clienteId: String?,
     @field:NotNull
